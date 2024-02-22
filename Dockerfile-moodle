@@ -1,0 +1,12 @@
+#Bitnami MariaDB Docker Image 
+FROM bitnami/moodle:latest
+#CMD echo "App moodle"
+#Carpeta que sera considerada como volumen cuando se crea el container
+#VOLUME ["/opt/"]
+#Variables de entorno
+ENV ALLOW_EMPTY_PASSWORD=yes
+ENV MOODLE_DATABASE_USER=bn_moodle
+ENV MOODLE_DATABASE_PASSWORD=bitnami
+ENV MOODLE_DATABASE_NAME=bitnami_moodle
+#Puerto del contenedor
+EXPOSE 80
